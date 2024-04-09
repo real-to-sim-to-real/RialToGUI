@@ -1,4 +1,20 @@
-# Digital Twin web interface
+# RialTo GUI
+We try to host the GUI [here](http://improbable008.csail.mit.edu). You can also run it on your local machine following the instructions below.
+
+This repository provides the official implementation of the RialTo GUI, as proposed in *Reconciling Reality through Simulation: A Real-to-Sim-to-Real approach for Robust Manipulation*
+The manuscript is available on [arXiv](https://arxiv.org/abs/2403.03949). See the [project page](https://real-to-sim-to-real.github.io/RialTo/)
+
+If you use this codebase, please cite
+
+```
+@article{torne2024reconciling,
+  title={Reconciling Reality through Simulation: A Real-to-Sim-to-Real Approach for Robust Manipulation},
+  author={Torne, Marcel and Simeonov, Anthony and Li, Zechu and Chan, April and Chen, Tao and Gupta, Abhishek and Agrawal, Pulkit},
+  journal={arXiv preprint arXiv:2403.03949},
+  year={2024}
+}
+```
+
 ## Tutorial
 Start launching the GUI by visiting the following website: http://improbable008.csail.mit.edu
 
@@ -29,15 +45,7 @@ Scan scene and any additional objects you want to interact with:
 ## Main Interface
 ![alt text](https://github.com/IAILeveragingRealToSim/RealToSimAPI/blob/main/materials/interface.png?raw=true)
 
-## Generated examples from objects in the objaverse
-![alt text](https://github.com/IAILeveragingRealToSim/RealToSimAPI/blob/main/materials/example1.png?raw=true)
-![alt text](https://github.com/IAILeveragingRealToSim/RealToSimAPI/blob/main/materials/example2.png?raw=true)
-![alt text](https://github.com/IAILeveragingRealToSim/RealToSimAPI/blob/main/materials/example3.png?raw=true)
-
-## Generated Example from a real-world setting
-![alt text](https://github.com/IAILeveragingRealToSim/RealToSimAPI/blob/main/materials/example4.png?raw=true)
-
-## Running API
+## Running API on the local machine
 ### Install node to your local machine
 1. Install nvm 
 
@@ -88,12 +96,3 @@ make run
 
 Install node (recommend installing on MacOS)
 
-
-# Pipeline for obtaining real world simulated environments:
-obtain mesh of the desired scene using Polycam photo mode
-
-Export GLTB medium quality
-
-Import into our API, modify the mesh add joints, sites, fixed joint
-
-Save as .usdz or .usd file
